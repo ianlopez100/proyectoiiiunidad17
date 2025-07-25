@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Agencia de Empleos</title> <style>
+        /*estilo para todo el documento*/
+        body {
+            background: #1EB0D7;
+            font-family: Tahoma;
+            font-size: 11px;
+            width: 1200px;
+            margin: auto;
+        }
+
+        /*estilo para la imagen arriba*/
+        #logo {
+            background: url(logo.png) no-repeat right;
+            margin: 0 0px;
+            background-size: 60%;
+            padding: 25em 0em 5em 0em;
+            text-transform: uppercase;
+        }
+
+        /*estilo para la etiqueta a incluida en H1*/
+        #logo h1 a {
+            margin: 0em;
+            padding: 0;
+            letter-spacing: -.1em;
+            text-decoration: none;
+            font-size: 2em;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+
+        /*estilo para el subtitulo "BIENVENIDOS A NUESTRO SITIO WEB"*/
+        #subtitulo {
+            padding: 0em;
+            margin-top: -1em;
+            font-size: 1.5em;
+            color: #B0DF2F; /* Corregido de #B0DF2FF a #B0DF2F o el color deseado */
+        }
+
+        /*estilo para los elementos de la lista del menu*/
+        #menu li {
+            display: inline-block;
+            margin-top: -2em;
+        }
+
+        /*Estilo para la etiqueta del Menu de opciones*/
+        #menu a {
+            display: block;
+            float: left;
+            margin-right: 0.12em;
+            padding: 1em 1.5em;
+            background: #F7BEAE;
+            box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.25);
+            text-decoration: none;
+            text-shadow: 1px 1px 0px #0C749C;
+            text-transform: uppercase;
+            font-size: .90em;
+            color: #FFFFFF;
+        }
+
+        /*Estilo para la seccion que muestra el contenido (ej. index.html)*/
+        #seccion {
+            width: 1150px;
+            padding: 0px 10px;
+            background: #FFF;
+            height: 270px;
+        }
+
+        /*Estilo para la seccion de servicios (el cambio está aquí)*/
+        #seccionServicios {
+            width: 1150px;
+            padding: 20px 40px;
+            background: #FFF;
+            height: auto; /* ¡CAMBIO AQUÍ: de 280px a auto! */
+            overflow: hidden; /* Asegura que los floats internos sean contenidos */
+        }
+
+        /*estilo para la imagen que se encuentra dentro de la seccion*/
+        #imagen {
+            margin: 0px;
+            width: 380px;
+            height: 25px; /* Este height de 25px para la imagen, ¿es intencional? */
+            text-align: center;
+        }
+
+        /*estilo para el titulo dentro de la seccion*/
+        #subtitulo1 {
+            font-family: Tahoma, Geneva, sans-serif;
+            font-size: 25px;
+            color: #039;
+        }
+
+        /*estilo para el texto del lado derecho*/
+        #ladoderecho {
+            margin: -5px 20px 0px 0px;
+            float: right;
+            width: 65%;
+            text-align: justify;
+            color: #666;
+        }
+
+        /*estilo para el pie del documento*/
+        #pie {
+            text-align: center;
+            color: #000000;
+        }
+
+        /*estilo para todo los parrafos del documento*/
+        p {
+            font-family: Tahoma;
+            font-size: 11pt;
+        }
+
+        /*Estilo para el texto mostrado en el lado izquierdo NOSOTROS*/
+        #ladoizquierdo {
+            margin: -5px 20px 0px;
+            float: left;
+            width: 65%;
+            font-size: 11px;
+            text-align: justify;
+            color: #666;
+        }
+
+        #columna {
+            margin: -5px 20px 0px 0px;
+            float: left;
+            width: 30%;
+            color: #666;
+        }
+
+        #seccionextensa {
+            width: 1050px;
+            padding: 20px 40px;
+            background: #FFF;
+            height: auto;
+        }
+
+        #centrado {
+            text-align: center;
+        }
+
+        #lista li {
+            font-size: 11px;
+        }
+
+        /* Estilo para subtitulo2 que es el header de algunas secciones */
+        #subtitulo2 {
+            font-family: Tahoma, Geneva, sans-serif;
+            font-size: 28px;
+            color: #039;
+            text-align: center;
+            padding: 15px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        #pie p {
+            font-size: 10px;
+            color: #999;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header id="img.jpg">
+        <center>
+        <h1><a href="principal.html">Agencia de Empleos</a></h1>
+        <p id="subtitulo">Bienvenidos a nuestro sitio web</p> <br>
+        </center>
+    </header>
+    <section>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html" title="Pagina Principal"
+                       HREFLANG="es-pe" ACCESSKEY="I">Inicio</a></li>
+                <li><a href="nosotros.html" title="Conocenos"
+                       HREFLANG="es-pe" ACCESSKEY="N">Nosotros</a></li>
+                <li><a href="servicios.html" title="Nuestros Servicios"
+                       HREFLANG="es-pe" ACCESSKEY="S">Servicios</a></li>
+                <li><a href="recursos.html" title="Recursos"
+                       HREFLANG="es-pe" ACCESSKEY="R">Recursos</a></li>
+                <li><a href="mailto:informa@agencia.com" title="Escrivanos"
+                       HREFLANG="es-pe" ACCESSKEY="C">Contactenos</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section id="seccionServicios">
+        <header id="subtitulo2">Nuestros Servicios</header>
+        <aside id="columna">
+            <ul>
+                <li>
+                    <p><strong>Niñeras</strong></p>
+                    <p>Nuestro servicio de Niñeras ayuda a los padres de familia que
+                        necesitan dejar en manos responsables a sus hijos, ya sea
+                        porque se van a trabajar antes de que sus niños se vayan al
+                        colegio o porque son niños muy pequeños y necesitan de alguien
+                        para atenderlos durante todo el día, brindándoles no solo
+                        seguridad o compañía, sino aprovechar el tiempo juntos para
+                        reforzar sus habilidades con juegos educativos.</p>
+                </li>
+                <li>
+                    <p><strong>Pagos mensuales: </strong></p>
+                    <ul>
+                        <li>de 20 a 30 años S/. 1500</li>
+                        <li>de 32 a 40 años S/. 1390</li>
+                        <li>de 42 a 52 años S/. 1200</li>
+                        <li>de 52 años S/. 1150</li>
+                        <li>de 18 años S/. 900</li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <aside id="columna">
+            <ul>
+                <li>
+                    <p><strong>Cocineras</strong></p>
+                    <p>Múltiples recetas hechas de la forma más tradicional, (como la
+                        abuela): Guisos, Menestras, comida criolla, Postres, Pastas,
+                        etc. Instrucciones sobre preparación, computación y
+                        descongelado de alimentos. Le presentaremos una lista con más
+                        de 50 recetas para que pueda elegir 5 por cada día del curso.</p>
+                </li>
+                <li>
+                    <p><strong>Cursos</strong></p>
+                    <p>de 8 horas (12 recetas) | Nuestra recomendación sería repartirlas
+                        durante: 2 semanas / 1 día a la semana / 4 horas semanales. De
+                        10 a 14 h., cuando los niños estén en el colegio.</p>
+                </li>
+            </ul>
+        </aside>
+        <aside id="columna">
+            <ul>
+                <li>
+                    <p><strong>Empleadas del Hogar</strong></p>
+                    <p>Organizamos el tiempo diario de trabajo de la empleada del
+                        hogar, dándole las pautas adecuadas para conseguir que adopte
+                        una misma rutina de trabajo para el día a día. De esta manera,
+                        conseguimos que optimice al máximo el tiempo del que dispone
+                        para realizar un trabajo, profesional y correcto.</p>
+                </li>
+                <li>
+                    <p><strong>Servicios:</strong></p>
+                    <p>Camas perfectas. Cobertura de cama. Cuartos de baño, limpieza
+                        de polvo. Aspirado y fregado de suelos. Cambio de sábanas y
+                        toallas. Limpieza de cocina. Aspirador: funciones Utilización
+                        de utensilios y productos de limpieza.</p>
+                </li>
+            </ul>
+        </aside>
+    </section>
+    <footer id="pie"><p>Todos los derechos reservados ©2019</p></footer>
+    <center>
+    <h4>Tics I - 2025 <br>Elaborado por ILV</h6>
+    </center>
+</body>
+</html>

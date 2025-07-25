@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos - Agencia de Empleos</title> <style>
+        /*estilo para todo el documento*/
+        body {
+            background: #1EB0D7;
+            font-family: Tahoma;
+            font-size: 11px;
+            width: 1200px;
+            margin: auto;
+        }
+
+        /*estilo para la imagen arriba*/
+        #logo {
+            background: url(logo.png) no-repeat right;
+            margin: 0 0px;
+            background-size: 60%;
+            padding: 25em 0em 5em 0em;
+            text-transform: uppercase;
+        }
+
+        /*estilo para la etiqueta a incluida en H1*/
+        #logo h1 a {
+            margin: 0em;
+            padding: 0;
+            letter-spacing: -.1em;
+            text-decoration: none;
+            font-size: 2em;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+
+        /*estilo para el subtitulo "BIENVENIDOS A NUESTRO SITIO WEB"*/
+        #subtitulo {
+            padding: 0em;
+            margin-top: -1em;
+            font-size: 1.5em;
+            color: #B0DF2FF;
+        }
+
+        /*estilo para los elementos de la lista del menu*/
+        #menu li {
+            display: inline-block;
+            margin-top: -2em;
+        }
+
+        /*Estilo para la etiqueta del Menu de opciones*/
+        #menu a {
+            display: block;
+            float: left;
+            margin-right: 0.12em;
+            padding: 1em 1.5em;
+            background: #F7BEAE;
+            box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.25);
+            text-decoration: none;
+            text-shadow: 1px 1px 0px #0C749C;
+            text-transform: uppercase;
+            font-size: .90em;
+            color: #FFFFFF;
+        }
+
+        /*Estilo para la seccion que muestra el contenido*/
+        #seccion {
+            width: 1150px;
+            padding: 0px 10px;
+            background: #FFF;
+            height: 270px; /* Esto podría necesitar ajuste para la página de Recursos */
+        }
+
+        /*Estilo para la seccion los servicios*/
+        #seccionServicios {
+            width: 1150px;
+            padding: 20px 40px;
+            background: #FFF;
+            height: 280px;
+        }
+
+        /*estilo para la imagen que se encuentra dentro de la seccion*/
+        /* Nota: el height de 25px para #imagen parece muy bajo para una imagen */
+        #imagen {
+            margin: 0px;
+            width: 380px;
+            height: 25px; /* Considera aumentar este valor si tus imágenes son más grandes */
+            text-align: center;
+        }
+
+        /*estilo para el titulo dentro de la seccion*/
+        #subtitulo1 {
+            font-family: Tahoma, Geneva, sans-serif;
+            font-size: 25px;
+            color: #039;
+        }
+
+        /*estilo para el texto del lado derecho*/
+        #ladoderecho {
+            margin: -5px 20px 0px 0px;
+            float: right;
+            width: 65%;
+            text-align: justify;
+            color: #666;
+        }
+
+        /*estilo para el pie del documento*/
+        #pie {
+            text-align: center;
+        }
+
+        /*estilo para todo los parrafos del documento*/
+        p {
+            font-family: Tahoma;
+            font-size: 11pt;
+        }
+
+        /*Estilo para el texto mostrado en el lado izquierdo NOSOTROS*/
+        #ladoizquierdo {
+            margin: -5px 20px 0px;
+            float: left;
+            width: 65%;
+            font-size: 11px;
+            text-align: justify;
+            color: #666;
+        }
+
+        #columna { /* Este es el ID que ya tenías para columnas */
+            margin: -5px 20px 0px 0px;
+            float: left;
+            width: 30%;
+            color: #666;
+        }
+
+        /* Nuevo estilo para las columnas en la sección de recursos si "columnal" era un error */
+        /* Si prefieres usar "columnal", deberías añadir #columnal aquí y en el CSS externo */
+        .column-resource { /* Sugerencia de clase para estas columnas */
+            float: left;
+            width: 30%; /* Ajusta el ancho según sea necesario */
+            margin: 10px 1.5%; /* Margen para espaciar las columnas */
+            text-align: center;
+            box-sizing: border-box; /* Incluye padding y border en el ancho total */
+            color: #666;
+        }
+       .column-resource img {
+    max-width: 100%;
+    max-height: 130px; /* ajusta según tu gusto */
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+    object-fit: contain;
+}
+
+        }
+        .column-resource p {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+
+        #seccionextensa {
+            width: 1050px;
+            padding: 20px 40px;
+            background: #FFF;
+            height: auto; /* Se mantiene auto para contenido variable */
+            clear: both; /* Limpia los floats de las columnas anteriores */
+            margin: auto; /* Centra si el body es más grande */
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1); /* Sombra para darle profundidad */
+        }
+
+        #centrado {
+            text-align: center;
+        }
+
+        #lista li {
+            font-size: 11px;
+        }
+
+        /* Estilo específico para las listas dentro de los artículos de recursos */
+        #seccionextensa ul {
+            list-style-type: disc; /* Puntos de lista */
+            margin-left: 20px;
+        }
+        #seccionextensa li {
+            margin-bottom: 10px;
+            font-size: 11pt; /* Asegura el tamaño de la fuente para los ítems de lista */
+            line-height: 1.5; /* Espaciado entre líneas */
+        }
+        #seccionextensa article p {
+            margin-bottom: 1em;
+        }
+        #seccionextensa article p strong {
+            font-size: 1.1em;
+            color: #039;
+        }
+        #seccionextensa article a {
+            color: #1EB0D7;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #seccionextensa article a:hover {
+            text-decoration: underline;
+        }
+
+        /* Corrección de la propiedad para el color #B0DF2FF (faltaba un F) */
+        #subtitulo {
+            color: #B0DF2F; /* Corregido de #B0DF2FF a #B0DF2F o el color deseado */
+        }
+
+        /* Ajuste para el id subtitulo2 que se usa como header en secciones */
+        #subtitulo2 {
+            font-family: Tahoma, Geneva, sans-serif;
+            font-size: 28px; /* Un poco más grande para ser un título de sección */
+            color: #039;
+            text-align: center;
+            padding: 15px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        #pie p {
+            font-size: 10px; /* Tamaño de fuente más pequeño para el pie de página */
+            color: #999;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header id="logo">
+        <h1><a href="principal.html" name="arriba">Agencia de Empleos</a></h1>
+        <p id="subtitulo">Bienvenidos a nuestro sitio web</p>
+    </header>
+
+    <section>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html" title="Pagina Principal"
+                       HREFLANG="es-pe" ACCESSKEY="I">Inicio</a></li>
+                <li><a href="nosotros.html" title="Conocenos"
+                       HREFLANG="es-pe" ACCESSKEY="N">Nosotros</a></li>
+                <li><a href="servicios.html" title="Nuestros Servicios"
+                       HREFLANG="es-pe" ACCESSKEY="S">Servicios</a></li>
+                <li><a href="recursos.html" title="Recursos"
+                       HREFLANG="es-pe" ACCESSKEY="R">Recursos</a></li>
+                <li><a href="mailto:informa@agencia.com" title="Escribanos"
+                       HREFLANG="es-pe" ACCESSKEY="C">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="seccion"> <header id="subtitulo2">Recursos</header>
+
+        <aside class="column-resource"> <img src="img2.jpg" alt="Mensajes Bíblicos"/>
+            <p><a href="#biblicos">Mensajes Bíblicos</a></p> </aside>
+
+        <aside class="column-resource"> <img src="img3.png" alt="Evaluación de Personal"/>
+            <p><a href="#evaluacion">Evaluación de Personal</a></p>
+        </aside>
+
+        <aside class="column-resource"> <img src="img4.jpg" alt="Consejos Útiles"/>
+            <p><a href="#consejos">Consejos Útiles</a></p>
+        </aside>
+        <div style="clear: both;"></div> </section>
+    <br/><br/>
+
+    <section id="seccionextensa">
+        <article>
+            <p><strong><a name="biblicos">Mensajes Bíblicos</a></strong></p> <p>
+                Es un mandato de Dios 20:9 Seis días trabajarás, y harás toda tu obra; es un mandato de Dios, 2 Timoteo 2:6: El labrador, para participar de los frutos, debe TRABAJAR primero Colosenses 3:22: SIERVOS, obedeced en todo a vuestros amos terrenales, no sirviendo al ojo, como los que quieren agradar a los hombres, sino con corazón sincero, temiendo a Dios. Colosenses 4:1: Amos, haced lo que es justo y recto con vuestros SIERVOS, sabiendo que también vosotros tenéis un Amo en los cielos. El diccionario de la real academia española dice:
+                <br/>
+                TRABAJO.- Acción y efecto de trabajar. 2. m. Ocupación retribuida.
+                Trabajar 1. intr. Ocuparse en cualquier actividad física o intelectual.
+                2. intr. Tener una ocupación remunerada en una empresa, una institución, etc. 3. intr. Ejercer determinada profesión u oficio.
+                EMPLEADOR,- empleador, ra. 1. adj. Que emplea. Empleada.- Persona que por un pago o sueldo desempeña los trabajos domésticos o ayuda en ellos. pago.- pago.(Del lat. salarium, de sal, sal).
+            </p>
+            <a href="#arriba">Subir</a>
+        </article>
+    </section>
+
+    <section id="seccionextensa"> <article>
+            <p><strong><a name="evaluacion">Evaluación Personal</a></strong></p>
+            <p>
+                Para garantizar un alto nivel de satisfacción del trabajo de nuestra empleada de hogar, intervienen múltiples factores, pero por nuestra experiencia las principales recomendaciones serían las siguientes:
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        Ofrecerle las instrucciones lo más detalladas posible durante los primeros días sobre las costumbres personales en su domicilio y con su familia, horarios de las distintas comidas, etc ( TEMA 2) y corregirle lo antes posible aquellos puntos que no esté realizando a su gusto.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Recompensarle con el pago de un buen pago, respetar tanto sus días libres ó festivos, como sus horas de descanso y cumplir con los derechos recogidos en el actual convenio de servicio doméstico (que les detallamos en este capítulo).
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Tenemos que hacer también una reflexión sobre el nivel de responsabilidad que realmente les vamos a exigir, son trabajadoras de apoyo en la casa y obviamente esperaremos de ellas responsabilidad, iniciativa y colaboración, pero en algunos casos creo que las expectativas son demasiado altas desde el primer día de trabajo.
+                    </p>
+                </li>
+            </ul>
+            <a href="#arriba">Subir</a>
+        </article>
+    </section>
+
+    <section id="seccionextensa"> <article>
+            <p><strong><a name="consejos">Consejos</a></strong></p>
+            <p>
+                Antes de entrevistar a las posibles candidatas, debemos asegurarnos a través de una primera conversación telefónica que realmente ellas estén interesadas en trabajar en la modalidad que usted lo requiera; externa o interna.
+                <br/>
+                Las trabajadoras de este sector se dividen en estas dos modalidades. Como trabajadoras externas podemos encontrar personal más formado (la gran mayoría han sido internas durante años), conocen mejor sus obligaciones y realizarán un trabajo más mecanizado.
+                <br/>
+                La mayoría de las trabajadoras interesadas en trabajar como internas, son habitualmente las que llevan poco tiempo en Lima y no suelen disponer de demasiada experiencia y referencias, prefieren trabajar como internas por seguridad y conveniencia para ahorrar el máximo y no incrementar sus gastos con alquileres de habitaciones, manutención y transporte y durarán el tiempo que consideren necesario para estabilizar el pago de las deudas adquiridas para su desplazamiento a Lima y ahorrar lo suficiente para, en la mayoría de los casos, traerse a su familia a Lima o volverse a su país. Por ello, debemos de aceptar que la duración media de una trabajadora interna suele estar en 2 años, y siempre que se encuentren valoradas y cuidadas por sus empleadores.
+            </p>
+            <a href="#arriba">Subir</a>
+        </article>
+    </section>
+
+    <footer id="pie">
+        <p>Todos los derechos reservados ©2019</p> </footer>
+        <center>
+    <h4>Tics I - 2025 <br>Elaborado por ILV</h6>
+    </center>
+</body>
+</html>
